@@ -6,8 +6,11 @@ Hello fellow iOS Developers! Today I decided to stop using makeappicon.com to ge
 How to use my script:
 
 1)  You have to have python 3.x installed. Look at python.org for instructions.
+
 2)  Download the script "iOSAppIconGenerator.py".
+
 3)  The image you want to use must be in the same folder as the script (*.png or *.jpg).
+
 4)  You have two options for running the script. You can run it with Python Launcher if you installed python from python.org or you can just run it from terminal. So 2 options are:
   - Just right click the script and open with Python Launcher. The script will automatically find the image in its current     folder and create a new folder within with resized images and a contents.json file.
   - Change directory (cd) to the directory you have the script and the picture from terminal. Then run this command without the quotes: “python3 iOSAppIconGenerator.py” or “python iOSAppIconGenerator.py”.
