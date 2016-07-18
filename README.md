@@ -16,4 +16,4 @@ How to use my script:
   - Change directory (cd) to the directory you have the script and the picture from terminal. Then run this command without the quotes: “python3 iOSAppIconGenerator.py” or “python iOSAppIconGenerator.py”.
 
 The asset folder is ready! Just drag the created folder in your Xcode project assets. Don’t forget to delete the old empty asset folder named “AppIcon” and rename the new folder to the same name.
-Please keep in mind that this is just a 2 hours project and the script has no error handling whatsoever. So if you come across any bugs leave a comment below!
+Please keep in mind that this is just a 2 hours project and the script has no error handling whatsoever. So if you come across any bugs leave a comment!
