@@ -1,5 +1,5 @@
 # iOSAppIconGenerator
-iOSAppIconGenerator - written in Python by @dorukgezici
+iOSAppIconGenerator - written in Python by @dorukgezici. Check out the blog post: http://dorukgezici.com/ios-app-icon-generator-script/
 
 Hello fellow iOS Developers! Today I decided to stop using makeappicon.com to generate my app icons. Instead, I coded a small script in Python which works like a charm. You put the image you want to use as your app icon in the same directory as the script and the script will generate all the resized images you need and put them in the Xcode format “AppIcon.appiconset” folder. The only thing left for you to do is to drag that folder in your Xcode project assests.
 
