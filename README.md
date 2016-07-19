@@ -11,6 +11,8 @@ How to use my script:
 
 2)  Download the script "iOSAppIconGenerator.py".
 
+3)  Install the Python Library “Pillow” by typing in terminal without the quotes: "pip install Pillow"
+
 3)  The image you want to use must be in the same folder as the script (*.png or *.jpg).
 
 4)  You have two options for running the script. You can run it with Python Launcher if you installed python from python.org or you can just run it from terminal. So 2 options are:
