@@ -40,12 +40,6 @@ json_data = {
         {
             "idiom":"iphone",
             "size":"40x40",
-            "scale":"1x",
-            "filename":"Icon-App-40x40@1x.png"
-        },
-        {
-            "idiom":"iphone",
-            "size":"40x40",
             "scale":"2x",
             "filename":"Icon-App-40x40@2x.png"
         },
@@ -54,12 +48,6 @@ json_data = {
             "size":"40x40",
             "scale":"3x",
             "filename":"Icon-App-40x40@3x.png"
-        },
-        {
-            "idiom":"iphone",
-            "size":"60x60",
-            "scale":"1x",
-            "filename":"Icon-App-60x60@1x.png"
         },
         {
             "idiom":"iphone",
@@ -111,12 +99,6 @@ json_data = {
         },
         {
             "idiom":"ipad",
-            "size":"76x76",
-            "scale":"3x",
-            "filename":"Icon-App-76x76@3x.png"
-        },
-        {
-            "idiom":"ipad",
             "size":"83.5x83.5",
             "scale":"2x",
             "filename":"Icon-App-83.5x83.5@2x.png"
@@ -141,7 +123,7 @@ def get_size(image):
     scale_str = image["scale"]
     j = scale_str.find("x")
     scale = int(scale_str[:j])
-    return (scale * int(size[0]), scale * int(size[1]))
+    return (int(scale * float(size[0])), int(scale * float(size[1])))
 
 with open("AppIcon.appiconset/Contents.json", mode="r") as data_file:
     data = json.load(data_file)
