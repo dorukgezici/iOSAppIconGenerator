@@ -13,7 +13,7 @@ for f in os.listdir():
         filename = f
         break
 
-print("\n<- iOS Icon Generator Script by DG ->\nPlease make sure the script is in the same folder as the image.")
+print("\n<- iOS App Icon Generator Script by DG ->\nPlease make sure the script is in the same folder as the image.")
 if filename is None:
     sys.exit("Couldn't find an image(.jpg/.png) in the folder. Please try again.")
 
@@ -130,7 +130,7 @@ with open("AppIcon.appiconset/Contents.json", mode="r") as data_file:
     images = data["images"]
     try:
         im = Image.open(filename)
-        print(im.format, im.size, im.mode)
+        print("Image found:", im.format, im.size, im.mode, "\n", "-"*40)
     except IOError:
         print("Image not found")
 
@@ -138,3 +138,6 @@ for image in images:
     size = get_size(image)
     out = im.resize(size, Image.ANTIALIAS)
     out.save("AppIcon.appiconset/"+image["filename"], format="PNG")
+    print("Image generated: {0}".format(size))
+
+print("Generator completed. Copy the 'AppIcon.appiconset' folder to your Xcode project assets and your app icon is good to go!\nGitHub: @dorukgezici\n")
