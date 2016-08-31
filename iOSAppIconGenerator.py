@@ -130,7 +130,8 @@ with open("AppIcon.appiconset/Contents.json", mode="r") as data_file:
     images = data["images"]
     try:
         im = Image.open(filename)
-        print("Image found:", im.format, im.size, im.mode, "\n", "-"*40)
+        print("Image found:", im.format, im.size, im.mode)
+        print("-"*50)
     except IOError:
         print("Image not found")
 
@@ -140,4 +141,4 @@ for image in images:
     out.save("AppIcon.appiconset/"+image["filename"], format="PNG")
     print("Image generated: {0}".format(size))
 
-print("Generator completed. Copy the 'AppIcon.appiconset' folder to your Xcode project assets and your app icon is good to go!\nGitHub: @dorukgezici\n")
+print("-"*50, "\nGenerator completed. Copy the 'AppIcon.appiconset' folder to your Xcode project assets and your app icon is good to go!\nGitHub: @dorukgezici -> https://github.com/dorukgezici/iOSAppIconGenerator.git\n")
