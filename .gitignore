@@ -1,3 +1,7 @@
 AppIcon.appiconset
 *.jpg
 *.png
+.DS_Store
+build
+dist
+__pycache__
