@@ -10,7 +10,7 @@ import macholib_patch
 
 APP = ['iOSAppIconGenerator.py']
 DATA_FILES = []
-OPTIONS = {'argv_emulation': False}
+OPTIONS = {'argv_emulation': False, 'packages': 'PIL'}
 
 setup(
     app=APP,
