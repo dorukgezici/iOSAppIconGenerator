@@ -1,6 +1,7 @@
 # iOSAppIconGenerator
-iOSAppIconGenerator - written in Python by @dorukgezici.
+[![Build Status](https://travis-ci.org/dorukgezici/iOSAppIconGenerator.svg?branch=master)](https://travis-ci.org/dorukgezici/iOSAppIconGenerator) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 
+iOS App Icon Generator for Xcode - written in Python by @dorukgezici.
 Check out the blog post: http://dorukgezici.com/ios-app-icon-generator-script/
 
 ## Usage
