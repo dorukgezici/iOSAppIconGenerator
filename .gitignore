@@ -1,6 +1,7 @@
 AppIcon.appiconset
 *.jpg
 *.png
+!DGtech.jpg
 .DS_Store
 build
 dist
