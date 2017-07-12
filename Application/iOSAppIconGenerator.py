@@ -17,6 +17,18 @@ json_data = {
     "images":[
         {
             "idiom":"iphone",
+            "size":"20x20",
+            "scale":"2x",
+            "filename":"Icon-App-20x20@2x.png"
+        },
+        {
+            "idiom":"iphone",
+            "size":"20x20",
+            "scale":"3x",
+            "filename":"Icon-App-20x20@3x.png"
+        },
+        {
+            "idiom":"iphone",
             "size":"29x29",
             "scale":"1x",
             "filename":"Icon-App-29x29@1x.png"
@@ -47,6 +59,18 @@ json_data = {
         },
         {
             "idiom":"iphone",
+            "size":"57x57",
+            "scale":"1x",
+            "filename":"Icon-App-57x57@1x.png"
+        },
+        {
+            "idiom":"iphone",
+            "size":"57x57",
+            "scale":"2x",
+            "filename":"Icon-App-57x57@2x.png"
+        },
+        {
+            "idiom":"iphone",
             "size":"60x60",
             "scale":"2x",
             "filename":"Icon-App-60x60@2x.png"
@@ -56,6 +80,18 @@ json_data = {
             "size":"60x60",
             "scale":"3x",
             "filename":"Icon-App-60x60@3x.png"
+        },
+        {
+            "idiom":"ipad",
+            "size":"20x20",
+            "scale":"1x",
+            "filename":"Icon-App-20x20@1x.png"
+        },
+        {
+            "idiom":"ipad",
+            "size":"20x20",
+            "scale":"2x",
+            "filename":"Icon-App-20x20@2x.png"
         },
         {
             "idiom":"ipad",
@@ -82,6 +118,30 @@ json_data = {
             "filename":"Icon-App-40x40@2x.png"
         },
         {
+          "size" : "50x50",
+          "idiom" : "ipad",
+          "filename" : "Icon-Small-50x50@1x.png",
+          "scale" : "1x"
+        },
+        {
+          "size" : "50x50",
+          "idiom" : "ipad",
+          "filename" : "Icon-Small-50x50@2x.png",
+          "scale" : "2x"
+        },
+        {
+            "idiom":"ipad",
+            "size":"72x72",
+            "scale":"1x",
+            "filename":"Icon-App-72x72@1x.png"
+        },
+        {
+            "idiom":"ipad",
+            "size":"72x72",
+            "scale":"2x",
+            "filename":"Icon-App-72x72@2x.png"
+        },
+        {
             "idiom":"ipad",
             "size":"76x76",
             "scale":"1x",
@@ -101,7 +161,7 @@ json_data = {
         }
     ],
     "info":{
-        "version":2,
+        "version":1,
         "author":"Doruk Gezici"
     }
 }
