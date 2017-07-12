@@ -168,14 +168,12 @@ json_data = {
 
 def get_image_path():
     Data.image_path = askopenfilename()
-    choose_file_button.configure(bg="green")
-    choose_save_button.update()
+    chosen_file_path_label["text"] = Data.image_path
     return Data.image_path
 
 def get_save_path():
     Data.save_path = askdirectory()
-    choose_save_button.update()
-    choose_save_button.configure(bg="green")
+    chosen_save_path_label["text"] = Data.save_path
     return Data.save_path
 
 
@@ -219,10 +217,12 @@ def run():
 
 
 def clear():
-    output_label["text"] = ""
-    open_saved_button.grid_remove()
     Data.image_path = ""
     Data.save_path = os.path.dirname(__file__)
+    output_label["text"] = ""
+    chosen_file_path_label["text"] = ""
+    chosen_save_path_label["text"] = ""
+    open_saved_button.grid_remove()
     if ".app" in Data.save_path:
         while not Data.save_path.endswith(".app"):
             Data.save_path = os.path.dirname(Data.save_path)
@@ -238,11 +238,15 @@ choose_file_labelframe = tk.LabelFrame(choose_frame, text="Choose Image File")
 choose_file_labelframe.grid(row=0, column=0, padx=10)
 choose_file_button = tk.Button(choose_file_labelframe, text="Image", command=get_image_path)
 choose_file_button.pack()
+chosen_file_path_label = tk.Label(choose_file_labelframe)
+chosen_file_path_label.pack()
 
 choose_save_labelframe = tk.LabelFrame(choose_frame, text="Choose Path to Save")
 choose_save_labelframe.grid(row=0, column=1, padx=10)
 choose_save_button = tk.Button(choose_save_labelframe, text="Directory", command=get_save_path)
 choose_save_button.pack()
+chosen_save_path_label = tk.Label(choose_save_labelframe)
+chosen_save_path_label.pack()
 
 open_saved_button = tk.Button(choose_frame, text="Show in Finder", command=open_saved)
 open_saved_button.grid(row=1, column=0, columnspan=2, sticky=tk.W+tk.E)
