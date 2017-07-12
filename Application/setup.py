@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup
-#import macholib_patch
+import macholib_patch
 
 APP = ['iOSAppIconGenerator.py']
 APP_NAME = "iOSAppIconGenerator"
